@@ -1,0 +1,10 @@
+Start Up - Log in get files
+
+Html build basic with colors to show different screens
+
+Logic needed
+
+When to wake up (total time sleeping, break to stages and rem, calculate best for health, lucid dreams)
+
+Call to actions (did you dream, Going to bed?)
+
