@@ -1,0 +1,17 @@
+.navbar-fixed-top {
+	padding-left: 20px;
+	position: static;
+}
+
+.collapse navbar-collapse navbar-collapse-01 {
+	text-align: center;
+}
+
+.dropdown {
+	width:133px;
+}
+
+.scroller {
+	color:black;
+	padding-top: 1em;
+}
