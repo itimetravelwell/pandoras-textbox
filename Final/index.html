@@ -4,31 +4,31 @@
 
 <head>
 
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>12:34</title> <!-- current time var -->
+
 
     <link rel="stylesheet" href="./Default theme - jQuery Mobile Demos_files/jquery.mobile-1.4.5.min.css">
     <link rel="shortcut icon" href="https://demos.jquerymobile.com/1.4.5/favicon.ico">
     <script src="./Default theme - jQuery Mobile Demos_files/jquery.js"></script>
     <script src="./Default theme - jQuery Mobile Demos_files/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="./css/main.css">"
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/date.js"></script>
 
-
-</head>
+</head> 
 
 <body>
 
  
 
-<div data-role="page" id="page1" data-theme="a" class="bgimg">
+<div data-role="page" id="page1" data-theme="b" class="pagemain bgimg"><!-- create code to change data-type based on time of day -->
 
-  <div data-role="header" role="banner" data-theme="a" class="ui-header ui-bar-inherit">
-        <h1 class="ui-title" role="heading" aria-level="1">Dreambot</h1>
-        <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
-        <a href="#" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-left ui-shadow ui-corner-all" data-role="button" role="button">Dream Log</a>
+  <div data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit daysheader">
+        <h1 class="ui-bar" role="heading" aria-level="1">DreamBot</h1> <!-- change to icon or custom font -->
+        <a href="#" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all logbutton" data-role="button" role="button">Music Player</a> <!-- make popup or switch content view to music player -->
+        <a href="#" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-right ui-shadow ui-corner-all logbutton" data-role="button" role="button">Dream Log</a> 
         <div data-role="navbar" class="ui-navbar" role="navigation" style="display: block;">
             <ul class="ui-grid-b">
                 <li class="ui-block-a"><a href="#" class="ui-state-persist ui-link ui-btn ui-btn-active">MON</a></li> <!-- current date var, need to add corresponding date as number upper hand -->
@@ -42,15 +42,46 @@
 
 
   <div role="main" class="ui-content">
-
-    <p>LONG FORM DATE</p> <!-- ather from device/location/internet api? -->
-    <h1>LARGE TIME</h1> <!-- string create gather from device current time -->
+  <!-- create code to change data-type based on time of day -->
+  <style type="text/css">
+                    body{
+                font-family: 'gamegirl_classicregular';
+                            }
+        </style>
+    <h2>It is now  
+    <script type="text/javascript">
+    <!--
+    var d = new Date();
+    
+    var currentTime = new Date();
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    
+    var day = currentTime.getDate()
+    var year = currentTime.getFullYear()
+   
+    document.write(month[d.getMonth()] + " " + day + " " + year)
+    //-->
+    </script>
+    </h2><!-- ather from device/location/internet api? -->
+    <h3>LARGE TIME</h3> <!-- string create gather from device current time -->
     <div>API for Weather</div> <!-- create box for corner and find icons if not included in api -->
     <div>sortable ul list with text inputs?</div> <!-- use keep api? if not create list of 10 that can be sortable, and with checkboxes -->
 
   </div>
 
-  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div data-role="footer" data-position="fixed">
   <h1 class="ui-title">THE QUICK BROWN FOX JUMPED OVER THE MOON</h1> <!-- scrolling, get text from news api? -->
     
 
