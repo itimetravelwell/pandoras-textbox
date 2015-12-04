@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>12:34</title> <!-- current time var -->
+
+    <link rel="stylesheet" href="./Default theme - jQuery Mobile Demos_files/jquery.mobile-1.4.5.min.css">
+    <link rel="shortcut icon" href="https://demos.jquerymobile.com/1.4.5/favicon.ico">
+    <script src="./Default theme - jQuery Mobile Demos_files/jquery.js"></script>
+    <script src="./Default theme - jQuery Mobile Demos_files/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">"
+
+
+</head>
+
+<body>
+
+ 
+
+<div data-role="page" id="page1" data-theme="a" class="bgimg">
+
+  <div data-role="header" role="banner" data-theme="a" class="ui-header ui-bar-inherit">
+        <h1 class="ui-title" role="heading" aria-level="1">Dreambot</h1>
+        <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
+        <a href="#" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-left ui-shadow ui-corner-all" data-role="button" role="button">Dream Log</a>
+        <div data-role="navbar" class="ui-navbar" role="navigation" style="display: block;">
+            <ul class="ui-grid-b">
+                <li class="ui-block-a"><a href="#" class="ui-state-persist ui-link ui-btn ui-btn-active">MON</a></li> <!-- current date var, need to add corresponding date as number upper hand -->
+                <li class="ui-block-b"><a href="#" class="ui-link ui-btn">TUE</a></li> <!-- possible to create same var+1? -->
+                <li class="ui-block-c"><a href="#" class="ui-link ui-btn">WED</a></li>  <!-- would be nice to click data, gather what data it is from string/var, look up said date and show a pop/alert/toast/ with icon for weather -->
+                <li class="ui-block-d"><a href="#" class="ui-link ui-btn">THU</a></li>
+                <li class="ui-block-e"><a href="#" class="ui-link ui-btn">FRI</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+  <div role="main" class="ui-content">
+
+    <p>LONG FORM DATE</p> <!-- ather from device/location/internet api? -->
+    <h1>LARGE TIME</h1> <!-- string create gather from device current time -->
+    <div>API for Weather</div> <!-- create box for corner and find icons if not included in api -->
+    <div>sortable ul list with text inputs?</div> <!-- use keep api? if not create list of 10 that can be sortable, and with checkboxes -->
+
+  </div>
+
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <h1 class="ui-title">THE QUICK BROWN FOX JUMPED OVER THE MOON</h1> <!-- scrolling, get text from news api? -->
+    
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn ui-icon-gear ui-btn-icon-left ui-shadow ui-corner-all  settings-btn">Settings</a></li> <!-- change to circle buttons and find or use icons -->
+        <li><a href="#" class="ui-btn-active ui-icon-eye ui-btn-icon-right ui-shadow ui-corner-all sleep-btn">Sleep Now</a></li><!-- create fuction so when user presses button it captures current time from above, and displays, the times when rem will be active, when the best time to wake up -->
+      </ul>
+    </div><!-- /navbar -->
+
+  </div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+
+</html>
+
