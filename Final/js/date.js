@@ -1,16 +1,16 @@
-*
- * Date Format 1.2.3
- * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
- * MIT license
- *
- * Includes enhancements by Scott Trenda <scott.trenda.net>
- * and Kris Kowal <cixar.com/~kris.kowal/>
- *
- * Accepts a date, a mask, or a date and a mask.
- * Returns a formatted version of the given date.
- * The date defaults to the current date/time.
- * The mask defaults to dateFormat.masks.default.
- */
+// *
+//  * Date Format 1.2.3
+//  * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
+//  * MIT license
+//  *
+//  * Includes enhancements by Scott Trenda <scott.trenda.net>
+//  * and Kris Kowal <cixar.com/~kris.kowal/>
+//  *
+//  * Accepts a date, a mask, or a date and a mask.
+//  * Returns a formatted version of the given date.
+//  * The date defaults to the current date/time.
+//  * The mask defaults to dateFormat.masks.default.
+//  */
 
 var dateFormat = function () {
 	var	token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,
@@ -123,4 +123,20 @@ dateFormat.i18n = {
 Date.prototype.format = function (mask, utc) {
 	return dateFormat(this, mask, utc);
 };
+
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt2').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;}
 

@@ -8,20 +8,49 @@
          url('gamegirl-webfont.svg#gamegirl_classicregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+marquee li {
+  display:inline;
+}
+body, .ui-btn {
+	font-family: 'gamegirl_classicregular';
+}
+
+ul.tester li {
+	display:inline;
+}
+.ui-btn {
+    font-size: 1.9vmin;
+    line-height: 1;
+}
+.ui-header, .ui-footer {
+	font-size: 3vmin;
+	font-family: 'gamegirl_classicregular';
 }
 
 .bgimg {
-	background: url('http://i.imgur.com/uSTHZf7.gif') bottom left no-repeat;
-    background-color:#333;
-    background-size: 100%;
-}; /*var different background for time of day*/
+	background: url('http://i.imgur.com/uSTHZf7.gif') left top no-repeat;
+    background-color:#999;
+    max-height:100%;
 
-img {
-	width:10%;
-};
+} /*var different background for time of day*/
 
+div#txt2 {
+	font-size: 13vw;
+	opacity: 0.6;
+}
+
+h1 {
+  font-size: 3.5vw;
+  opacity: 0.95;
+}
 h2 {
-	font-family: 'gamegirl_classicregular'
-};
-
+  font-size: 4.6vh;
+}
+p {
+  font-size: 2vmin;
+}
+ul {
+	font-size:2vmin; 
+}
