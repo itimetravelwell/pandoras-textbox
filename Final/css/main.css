@@ -21,7 +21,6 @@ ul.tester li {
 	display:inline;
 }
 .ui-btn {
-    font-size: 1.9vmin;
     line-height: 1;
 }
 .ui-header, .ui-footer {
@@ -31,14 +30,14 @@ ul.tester li {
 
 .bgimg {
 	background: url('http://i.imgur.com/uSTHZf7.gif') left top no-repeat;
-    background-color:#999;
-    max-height:100%;
-
+    background-color:#E4E7DA;
+    background-size: cover;
 } /*var different background for time of day*/
 
 div#txt2 {
-	font-size: 13vw;
-	opacity: 0.6;
+	font-size: 11vw;
+	opacity: 0.87;
+	color: #E4E7DA;
 }
 
 h1 {
@@ -53,4 +52,11 @@ p {
 }
 ul {
 	font-size:2vmin; 
+}
+
+h5 {
+	text-align: center;
+	padding-top:30px;
+	opacity: 0.6;
+	color: #E4E7DA;
 }
