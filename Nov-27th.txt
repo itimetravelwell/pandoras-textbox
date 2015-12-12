@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Start Up - Log in get files
 
 Html build basic with colors to show different screens
@@ -10,3 +11,50 @@ Call to actions (did you dream, Going to bed?)
 
 
 
+=======
+Build Template
+7 coloums, 126 width, gutter 6px width
+11 rows 65 height, gutter 0 width
+
+TO DO for BASIC HTML
+clocks and times, boxes, buttons.
+
+components
+fixed nav-bar - 7 links, variable names
+1.var = start of the week / exponent number = day of the month
+2. +1
+3.+2 etc.
+nav-bar each button/link goes to “weather page”
+
+first item (current date long form variable)
+second item (current time)
+third item var = weather/ based on number ranges use different picture for item
+forth ordered list with title “today”
+(gather list from var stored in todo)
+
+fifth music controls
+three items - play “music” - variable for current song loaded
+next song
+previous song
+
+fixed footer
+text scrolling gather text from headlines
+
+
+
+
+
+
+
+
+Html build basic with colors to show different screens
+
+Logic needed
+
+When to wake up (total time sleeping, break to stages and rem, calculate best for health, lucid dreams)
+
+Call to actions (did you dream, Going to bed?)
+
+
+
+>>>>>>> 829405288c8acd1bf7bf669a04d2779faf91fb09
