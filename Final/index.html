@@ -41,6 +41,7 @@ function checkTime(i) {
 <div data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit daysheader">
         <h1 class="ui-bar" role="heading" aria-level="1">DreamBot v1.3</h1> <!-- change to icon or custom font -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="#" onlclick="music()" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all logbutton" data-role="button" role="button">Music</a>
     <script>
    function music() {
@@ -71,6 +72,11 @@ function checkTime(i) {
         <a href="#" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-right ui-shadow ui-corner-all logbutton" data-role="button" role="button">Log</a> 
         <div data-role="navbar" class="ui-navbar" role="navigation" style="display: block;">
 >>>>>>> origin/master
+=======
+        <a href="#" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all logbutton" data-role="button" role="button">Music</a><!-- make popup or switch content view to music player -->
+        <a href="#" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-right ui-shadow ui-corner-all logbutton" data-role="button" role="button">Log</a> 
+        <div data-role="navbar" class="ui-navbar" role="navigation" style="display: block;">
+>>>>>>> parent of 1984d4a... Final for Class Presentation
             <ul class="ui-grid-b">
                 <li class="ui-block-a test"><a href="#" class="ui-state-persist ui-link ui-btn ui-btn-active">MON</a></li> <!-- onClick change text in id = "nex" --> 
                 <li class="ui-block-b"><a href="#" class="ui-link ui-btn">TUE</a></li>
@@ -116,7 +122,12 @@ function checkTime(i) {
 </div>
     </h2> <!-- ensure script for sleep can gather current time+15mins or place holder for tracker api fix media breaks -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h4 id="town">IT IS HOT UP IN THE 6IX RIGHT NOW</h4> <!-- create box for corner and find icons if not included in api -->
+=======
+    <h4>It's cold outside (-13C), who are you holding?</h4> <!-- create box for corner and find icons if not included in api -->
+    <h5>REW   PLAY/PAUSE   STOP   FAST</h5> <!-- use keep api? if not create list of 10 that can be sortable, and with checkboxes -->
+>>>>>>> parent of 1984d4a... Final for Class Presentation
 
 =======
     <h4>It's cold outside (-13C), who are you holding?</h4> <!-- create box for corner and find icons if not included in api -->
@@ -129,7 +140,11 @@ function checkTime(i) {
 
   <div data-role="footer" data-position="fixed">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <marquee behaviour="scroll" direction="left" scrollamount="10" class="ui-title" id="ticker">
+=======
+<marquee behaviour="scroll" direction="left" scrollamount="10" class="ui-title" id="tester">
+>>>>>>> parent of 1984d4a... Final for Class Presentation
 Good morning Dave, and in case I don't kill you, Good afternoon, good evening, and Good Night.</marquee>
 
 =======
@@ -147,27 +162,9 @@ Good morning Dave, and in case I don't kill you, Good afternoon, good evening, a
 >>>>>>> origin/master
     <div data-role="navbar" >
       <ul>
-        <li><a href="#" class="ui-btn ui-icon-gear ui-btn-icon-left ui-shadow ui-corner-all  settings-btn" id="settings" onclick="myTown()">Settings</a></li> <!-- change to circle buttons and find or use icons --><script>
-   function myTown() {
-    var usertown = prompt("Where is your Body?", "The 6ix");
-    
-    if (person != null) {
-        document.getElementById("town").innerHTML =
-        "It is " + "Hot Up" + " in" + usertown + " right now.";
-    }
-}
-    </script>
-        <li><a href="#" onclick="sleep()" class="ui-btn-active ui-icon-eye ui-btn-icon-right ui-shadow ui-corner-all sleep-btn">Sleep Now</a></li><!-- create fuction so when user presses button it captures current time from above, and displays, the times when rem will be active, when the best time to wake up -->
-      </ul><script>
-   function sleep() {
-    var usertown = prompt("When do you want to wake up?", "Day After Tmrw");
-    
-    if (person != null) {
-        document.getElementById("town").innerHTML =
-        "It is " + "Hot Up" + " in" + usertown + " right now.";
-    }
-}
-    </script>
+        <li><a href="#" class="ui-btn ui-icon-gear ui-btn-icon-left ui-shadow ui-corner-all  settings-btn">Settings</a></li> <!-- change to circle buttons and find or use icons -->
+        <li><a href="#" class="ui-btn-active ui-icon-eye ui-btn-icon-right ui-shadow ui-corner-all sleep-btn">Sleep Now</a></li><!-- create fuction so when user presses button it captures current time from above, and displays, the times when rem will be active, when the best time to wake up -->
+      </ul>
     </div><!-- /navbar -->
 
   </div><!-- /footer -->
