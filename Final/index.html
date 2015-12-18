@@ -40,9 +40,31 @@ function checkTime(i) {
 
 <div data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit daysheader">
         <h1 class="ui-bar" role="heading" aria-level="1">DreamBot v1.3</h1> <!-- change to icon or custom font -->
-        <a href="#" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all logbutton" data-role="button" role="button">Music</a><!-- make popup or switch content view to music player -->
-        <a href="#" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-right ui-shadow ui-corner-all logbutton" data-role="button" role="button">Log</a> 
-        <div data-role="navbar" class="ui-navbar" role="navigation" style="display: block;">
+        <a href="#" onlclick="music()" class="ui-btn-left ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all logbutton" data-role="button" role="button">Music</a>
+    <script>
+   function music() {
+    var usertown = prompt("What would you like to listen to?", "The Weeknd");
+    
+    if (person != null) {
+//       soundcloud api document.getElementById("town").innerHTML =
+//        "It is " + "Hot Up" + " in" + usertown + " right now.";
+    }
+}
+    </script>
+    <!-- make popup or switch content view to music player -->
+        <a href="#" onclick="dream()" class="ui-btn-right ui-btn ui-icon-cloud ui-btn-icon-right ui-shadow ui-corner-all logbutton" id="log" data-role="button" role="button">Log</a> 
+        <div data-role="navbar" class="ui-navbar" role="navigation" style="display: block;"><script>
+   function dream() {
+    var usertown = prompt("What did you dream about?", "Alicia Keys");
+    
+    if (person != null) {
+//       bring up search bar to filter dreams meanings document.getElementById("town").innerHTML =
+//        "It is " + "Hot Up" + " in" + usertown + " right now.";
+    }
+}
+    </script>
+       
+            
             <ul class="ui-grid-b">
                 <li class="ui-block-a test"><a href="#" class="ui-state-persist ui-link ui-btn ui-btn-active">MON</a></li> <!-- onClick change text in id = "nex" --> 
                 <li class="ui-block-b"><a href="#" class="ui-link ui-btn">TUE</a></li>
@@ -87,20 +109,37 @@ function checkTime(i) {
     <h2><div id="txt2">
 </div>
     </h2> <!-- ensure script for sleep can gather current time+15mins or place holder for tracker api fix media breaks -->
-    <h4>It's cold outside (-13C), who are you holding?</h4> <!-- create box for corner and find icons if not included in api -->
-    <h5>REW   PLAY/PAUSE   STOP   FAST</h5> <!-- use keep api? if not create list of 10 that can be sortable, and with checkboxes -->
+    <h4 id="town">IT IS HOT UP IN THE 6IX RIGHT NOW</h4> <!-- create box for corner and find icons if not included in api -->
 
   </div>
 
   <div data-role="footer" data-position="fixed">
-<marquee behaviour="scroll" direction="left" scrollamount="10" class="ui-title" id="tester">
+<marquee behaviour="scroll" direction="left" scrollamount="10" class="ui-title" id="ticker">
 Good morning Dave, and in case I don't kill you, Good afternoon, good evening, and Good Night.</marquee>
 
     <div data-role="navbar" >
       <ul>
-        <li><a href="#" class="ui-btn ui-icon-gear ui-btn-icon-left ui-shadow ui-corner-all  settings-btn">Settings</a></li> <!-- change to circle buttons and find or use icons -->
-        <li><a href="#" class="ui-btn-active ui-icon-eye ui-btn-icon-right ui-shadow ui-corner-all sleep-btn">Sleep Now</a></li><!-- create fuction so when user presses button it captures current time from above, and displays, the times when rem will be active, when the best time to wake up -->
-      </ul>
+        <li><a href="#" class="ui-btn ui-icon-gear ui-btn-icon-left ui-shadow ui-corner-all  settings-btn" id="settings" onclick="myTown()">Settings</a></li> <!-- change to circle buttons and find or use icons --><script>
+   function myTown() {
+    var usertown = prompt("Where is your Body?", "The 6ix");
+    
+    if (person != null) {
+        document.getElementById("town").innerHTML =
+        "It is " + "Hot Up" + " in" + usertown + " right now.";
+    }
+}
+    </script>
+        <li><a href="#" onclick="sleep()" class="ui-btn-active ui-icon-eye ui-btn-icon-right ui-shadow ui-corner-all sleep-btn">Sleep Now</a></li><!-- create fuction so when user presses button it captures current time from above, and displays, the times when rem will be active, when the best time to wake up -->
+      </ul><script>
+   function sleep() {
+    var usertown = prompt("When do you want to wake up?", "Day After Tmrw");
+    
+    if (person != null) {
+        document.getElementById("town").innerHTML =
+        "It is " + "Hot Up" + " in" + usertown + " right now.";
+    }
+}
+    </script>
     </div><!-- /navbar -->
 
   </div><!-- /footer -->
